@@ -1,0 +1,1982 @@
+/*
+Changed from '@import mixins' to '@import "../../include/_mixins"' as the "grunt sass" task requires the path to find
+sass files that are present in a different directory.
+ */
+/* border */
+/* channel icon widget */
+/* TEXT COLORS */
+/* BACKGROUNDS COLORS */
+/* BORDERS COLORS */
+/* Arrows variables for info pane gallery nav */
+/* Arrows variables for main feed gallery nav */
+.text-alt {
+  color: #7FBDDF; }
+
+.text-primary {
+  color: #FFFFFF; }
+
+.text-secondary {
+  color: #929292; }
+
+.content-page {
+  position: relative;
+  width: 100vw; }
+  .content-page .video-source-switcher {
+    position: absolute;
+    text-align: center;
+    right: 450px;
+    top: 200px;
+    font-size: 13px; }
+  .content-page .content-description-panel {
+    max-width: 500px;
+    max-height: 545px;
+    font-size: 18px;
+    padding-top: 200px;
+    margin: 0 24px; }
+    .content-page .content-description-panel .main-title .content-title {
+      font-size: 36px; }
+  .content-page .content-image-container {
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -99;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top; }
+    .content-page .content-image-container.not-found-fallback {
+      background-image: url("../img/fallback/bg_default_tv_360x270.png");
+      max-width: 760px; }
+    .content-page .content-image-container .image-loading {
+      display: none; }
+    .content-page .content-image-container.load-pending .image-loading {
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000; }
+  .content-page .description-with-trailer .series-info-link.link-secondary {
+    color: #0f97ce;
+    margin-left: 5px; }
+  .content-page .recordings-strip-container {
+    display: none; }
+    .content-page .recordings-strip-container.has-recordings {
+      display: block; }
+    .content-page .recordings-strip-container .recordings-container.loading-spinner {
+      height: 326px;
+      width: 100%; }
+    .content-page .recordings-strip-container .recordings-container.no-episodes .editable-buttons-container {
+      display: none; }
+  .content-page .content-upcoming-container,
+  .content-page .content-cast-container,
+  .content-page .content-watchlist-container,
+  .content-page .content-allepisodes-container,
+  .content-page .may-also-like-container,
+  .content-page .ondemand-episodes-container,
+  .content-page .programs-carousel-container,
+  .content-page .recordings-strip-container {
+    margin-top: 34px;
+    padding: 0 24px; }
+    .content-page .content-upcoming-container h3,
+    .content-page .content-cast-container h3,
+    .content-page .content-watchlist-container h3,
+    .content-page .content-allepisodes-container h3,
+    .content-page .may-also-like-container h3,
+    .content-page .ondemand-episodes-container h3,
+    .content-page .programs-carousel-container h3,
+    .content-page .recordings-strip-container h3 {
+      font-size: 36px;
+      margin-top: 0;
+      margin-bottom: 10px; }
+    .content-page .content-upcoming-container .upcoming-filters,
+    .content-page .content-cast-container .upcoming-filters,
+    .content-page .content-watchlist-container .upcoming-filters,
+    .content-page .content-allepisodes-container .upcoming-filters,
+    .content-page .may-also-like-container .upcoming-filters,
+    .content-page .ondemand-episodes-container .upcoming-filters,
+    .content-page .programs-carousel-container .upcoming-filters,
+    .content-page .recordings-strip-container .upcoming-filters {
+      margin-top: 0; }
+    .content-page .content-upcoming-container .carousel-container,
+    .content-page .content-cast-container .carousel-container,
+    .content-page .content-watchlist-container .carousel-container,
+    .content-page .content-allepisodes-container .carousel-container,
+    .content-page .may-also-like-container .carousel-container,
+    .content-page .ondemand-episodes-container .carousel-container,
+    .content-page .programs-carousel-container .carousel-container,
+    .content-page .recordings-strip-container .carousel-container {
+      height: auto;
+      top: 0; }
+      .content-page .content-upcoming-container .carousel-container .is-dragging,
+      .content-page .content-cast-container .carousel-container .is-dragging,
+      .content-page .content-watchlist-container .carousel-container .is-dragging,
+      .content-page .content-allepisodes-container .carousel-container .is-dragging,
+      .content-page .may-also-like-container .carousel-container .is-dragging,
+      .content-page .ondemand-episodes-container .carousel-container .is-dragging,
+      .content-page .programs-carousel-container .carousel-container .is-dragging,
+      .content-page .recordings-strip-container .carousel-container .is-dragging {
+        pointer-events: none; }
+  .content-page .content-cast-container {
+    max-height: 360px; }
+  .content-page .content-upcoming-container ul.items.flickity-enabled {
+    height: 300px; }
+    .content-page .content-upcoming-container ul.items.flickity-enabled .flickity-prev-next-button {
+      top: 54%; }
+  .content-page .may-also-like-container {
+    padding: 1px 0; }
+
+.team-page.content-page .content-description-panel {
+  padding-bottom: 55px; }
+.team-page.content-page .recordings-strip-container {
+  padding: 0 24px; }
+  .team-page.content-page .recordings-strip-container h3 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 10px; }
+.team-page.content-page .content-upcoming-container.show-sport-filter label {
+  display: none; }
+.team-page.content-page .content-upcoming-container .upcoming-container.loading-spinner {
+  height: 280px; }
+.team-page.content-page .content-upcoming-container .upcoming-filters {
+  margin-top: 24px; }
+.team-page.content-page .no-upcoming .upcoming-filters {
+  display: block; }
+
+/* content_summary_info.scss
+ * Copyright 2017, TiVo Inc. All rights reserved
+ * This css partial supports the contentSummaryPanel widget and its callers
+ */
+.description-content .description-image,
+.description-content .dialog-image {
+  float: left;
+  display: inline-block;
+  margin-right: 15px; }
+.description-content .description-data {
+  margin: 10px 10px 0 0;
+  display: inline-block;
+  width: 70%; }
+.description-content .min-height-wrapper {
+  min-height: 4em; }
+.description-content .remove-bottom-margin {
+  margin-bottom: 0px; }
+.description-content .action-buttons {
+  min-height: 32px; }
+.description-content .branding-partners {
+  min-height: 32px;
+  margin: 5px 0 0;
+  transition: opacity .5ms;
+  opacity: 0; }
+.description-content .branding-partners.show-branding-partners {
+  opacity: 1; }
+
+.dialog-body .description-content {
+  padding: 10px; }
+  .dialog-body .description-content .description-data {
+    width: 310px;
+    margin: 0; }
+  .dialog-body .description-content.movie-content .description-data {
+    width: 410px; }
+  .dialog-body .description-content h2.main-title {
+    font-size: 1.5em;
+    margin-bottom: 5px; }
+  .dialog-body .description-content h3.sub-title {
+    font-size: 1.25em;
+    margin-bottom: 5px; }
+
+.fallback-for-disconnected-dvr,
+.fallback-for-empty-feed {
+  display: none; }
+
+.feed-empty .carousel-container {
+  display: none; }
+.feed-empty .fallback-for-empty-feed {
+  display: block;
+  margin-left: 10px; }
+.feed-empty.hide-feed {
+  display: none; }
+
+.error-disconnected .feed-empty .fallback-for-disconnected-dvr {
+  display: block; }
+.error-disconnected .feed-empty .fallback-for-empty-feed {
+  display: none; }
+
+li.wtw-item {
+  border-width: 4px;
+  border-color: transparent;
+  border-style: solid;
+  position: relative;
+  background-color: #121212; }
+  li.wtw-item.ui-state-highlight, li.wtw-item.ui-state-hover {
+    border-color: #ffffff;
+    transition: border-color 200ms ease-in;
+    transition: transform 200ms ease-out;
+    transform: scale(1.09);
+    z-index: 1; }
+  li.wtw-item.ui-state-hover {
+    z-index: 2; }
+  li.wtw-item .info-overlay {
+    display: none;
+    position: absolute;
+    top: 0; }
+  li.wtw-item .button-list {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    margin-left: 25%; }
+    li.wtw-item .button-list .season-info {
+      vertical-align: 0; }
+  li.wtw-item .button-list > li {
+    display: list-item;
+    text-align: left;
+    margin-top: 9px; }
+    li.wtw-item .button-list > li:first-child {
+      margin-top: 0; }
+    li.wtw-item .button-list > li > button {
+      padding: 0; }
+  li.wtw-item.ui-state-hover:not(.ui-state-highlight) .info-overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.8); }
+  li.wtw-item.ui-state-hover:not(.ui-state-highlight).display-buttons .button-list {
+    display: block; }
+
+.wtw-item.tv .img-container,
+.wtw-item.tv .info-overlay {
+  width: 267px;
+  height: 200px; }
+.wtw-item.mov .img-container,
+.wtw-item.mov .info-overlay {
+  width: 133px;
+  height: 200px; }
+
+.wtw-item .folder-feed-item {
+  float: left;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+  padding: 5px;
+  background-color: #242424;
+  border-radius: 6px; }
+  .wtw-item .folder-feed-item .title-container {
+    width: 100%; }
+  .wtw-item .folder-feed-item .img-container.image-browse-folder {
+    width: 190px;
+    height: 150px; }
+
+.use16x9-images .wtw-item.tv .img-container,
+.use16x9-images .wtw-item.tv .info-overlay {
+  width: 267px;
+  height: 150px; }
+.use16x9-images .wtw-item.mov .img-container,
+.use16x9-images .wtw-item.mov .info-overlay {
+  width: 100px;
+  height: 150px; }
+
+.use16x9-images .is-movies-only .wtw-item.mov .img-container,
+.use16x9-images .is-movies-only .wtw-item.mov .info-overlay {
+  background-size: cover;
+  width: 133px;
+  height: 200px; }
+
+.streaming-tv-feed-item {
+  float: left;
+  position: relative;
+  width: 170px;
+  height: 130px;
+  margin: 0 10px 10px 0;
+  overflow: hidden;
+  text-align: center;
+  padding: 5px;
+  background-color: #242424;
+  border-radius: 6px; }
+  .streaming-tv-feed-item .image-link-away {
+    position: absolute;
+    right: 5px;
+    top: 5px; }
+  .streaming-tv-feed-item .img-container {
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 160px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .streaming-tv-feed-item .img-container.not-found-fallback .image-overlay {
+      visibility: visible; }
+  .streaming-tv-feed-item:hover {
+    cursor: pointer; }
+  .streaming-tv-feed-item .image-overlay {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    visibility: hidden; }
+
+.wtw-grid.streaming-tv-feed-panel {
+  float: left;
+  width: 100%; }
+  .wtw-grid.streaming-tv-feed-panel .items {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+
+ul.wtw-grid .wtw-item {
+  margin: 0 7px 10px 0; }
+
+@keyframes grow-then-display {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+@keyframes shrink-then-hide {
+  0% {
+    opacity: 1;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(0); } }
+.preview-panel-set .feed-content-detail-panel:not(.ui-state-active) {
+  display: none; }
+.preview-panel-set .feed-content-detail-panel.ui-state-active {
+  display: block;
+  animation-duration: 150ms;
+  animation-timing-function: ease;
+  animation-name: grow-then-display; }
+.preview-panel-set .feed-content-detail-panel .upcoming-container {
+  min-height: 280px; }
+  .preview-panel-set .feed-content-detail-panel .upcoming-container ul.items.flickity-enabled .flickity-prev-next-button {
+    top: 56%; }
+.preview-panel-set .feed-content-detail-panel.unloading-panel {
+  display: block;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+  animation-name: shrink-then-hide; }
+
+.grid-heading.heading-container {
+  height: 0;
+  margin: 0; }
+
+.wtw-grid.feed-empty .items {
+  display: none; }
+.wtw-grid.feed-empty .fallback-for-empty-feed {
+  display: block; }
+.wtw-grid.feed-empty.hide-feed {
+  display: block; }
+
+.error-disconnected .wtw-grid.feed-empty .items {
+  display: none; }
+.error-disconnected .wtw-grid.feed-empty .fallback-for-disconnected-dvr {
+  display: block; }
+.error-disconnected .wtw-grid.feed-empty .fallback-for-empty-feed {
+  display: none; }
+
+.heading-container {
+  margin-top: 24px;
+  position: relative;
+  text-transform: capitalize; }
+  .heading-container > h3 {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 13px;
+    vertical-align: baseline;
+    font-size: 36px;
+    font-weight: 300;
+    color: #cccccc; }
+  .heading-container > h5 {
+    display: inline-block;
+    margin-left: 48px;
+    margin-bottom: 17px;
+    vertical-align: baseline;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff; }
+    .heading-container > h5.ui-state-hover {
+      color: #ffffff; }
+
+.feed-list-container > * {
+  padding-left: 50px; }
+
+.feed-with-preview {
+  margin-bottom: 4px;
+  position: relative;
+  z-index: 1; }
+  .feed-with-preview .flickity-viewport {
+    overflow: visible; }
+  .feed-with-preview.feed-with-preview-loading-images li.wtw-item.ui-state-highlight {
+    border-color: transparent; }
+
+.info-panel-gallery.ui-state-active {
+  display: block; }
+.info-panel-gallery:not(.ui-state-active) {
+  display: none; }
+.info-panel-gallery .upcoming-container {
+  min-height: 280px; }
+  .info-panel-gallery .upcoming-container ul.items.flickity-enabled .flickity-prev-next-button {
+    top: 62%; }
+
+.feed-with-preview-initializing .heading-container {
+  display: none; }
+
+.what-to-watch-container {
+  min-height: 600px; }
+  .what-to-watch-container.loading-spinner {
+    height: 600px; }
+
+.one-pass-nav-wrapper .ui-menu-item {
+  text-transform: uppercase; }
+
+.mobile-main-nav {
+  position: absolute;
+  top: 25px;
+  left: 24px;
+  z-index: 2; }
+  .mobile-main-nav .mobile-main-nav-menu-main {
+    margin: 0;
+    border: 0;
+    width: 20px;
+    height: 20px; }
+  .mobile-main-nav .js-mobile-main-nav-menu-items {
+    left: 0px;
+    top: 35px;
+    border-radius: 3px;
+    background-color: #3d3d3d;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16), 0 0 8px 0 rgba(0, 0, 0, 0.24); }
+    .mobile-main-nav .js-mobile-main-nav-menu-items .mobile-main-nav-item {
+      height: 32px;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      list-style: none; }
+      .mobile-main-nav .js-mobile-main-nav-menu-items .mobile-main-nav-item:first-of-type {
+        padding-top: 3px;
+        height: 35px; }
+      .mobile-main-nav .js-mobile-main-nav-menu-items .mobile-main-nav-item:last-of-type {
+        padding-bottom: 3px;
+        height: 35px; }
+      .mobile-main-nav .js-mobile-main-nav-menu-items .mobile-main-nav-item .menu-list-item-text {
+        padding-left: 16px;
+        padding-right: 28px;
+        white-space: nowrap;
+        line-height: 32px;
+        font-size: 18px;
+        color: #bfbfbf; }
+
+.mobile-main-nav.hide-for-search {
+  display: none; }
+
+.mobile-header i.fa {
+  display: inline-block;
+  margin: .33em;
+  float: left;
+  vertical-align: middle; }
+.mobile-header i.fa.fa-search,
+.mobile-header i.fa.fa-gear {
+  float: right; }
+
+.mobile-slideout {
+  display: none;
+  width: 0px;
+  background: #1A1A1A;
+  opacity: 0;
+  min-height: 40px;
+  position: absolute;
+  z-index: 91;
+  top: 0; }
+  .mobile-slideout i.fa.fa-times {
+    float: right;
+    margin: .5em 1em; }
+  .mobile-slideout#topnav-menu .top-nav-menu-items {
+    display: block;
+    margin-left: 0.5em; }
+    .mobile-slideout#topnav-menu .top-nav-menu-items li {
+      width: 100%;
+      margin-top: 0.3em; }
+  .mobile-slideout#topnav-menu .top-nav-menu-sub-items {
+    margin-left: 0.5em; }
+  .mobile-slideout#topnav-menu .help-menu-container .fa-angle-down {
+    display: none; }
+  .mobile-slideout#topnav-menu .help-menu-container .help-menu-list {
+    border: none; }
+    .mobile-slideout#topnav-menu .help-menu-container .help-menu-list .help-menu-list-item {
+      border: none;
+      background: none;
+      width: 100%; }
+      .mobile-slideout#topnav-menu .help-menu-container .help-menu-list .help-menu-list-item .menu-list-item-text {
+        color: #929292; }
+  .mobile-slideout#topnav-menu .global-dvr-selector {
+    margin: 0.5em;
+    float: left; }
+    .mobile-slideout#topnav-menu .global-dvr-selector .ui-selectmenu-button {
+      border: 1px solid #FFFFFF;
+      max-width: 230px;
+      top: -0.5em;
+      height: auto; }
+  .mobile-slideout#search-menu .global-search-container {
+    float: none;
+    right: 0;
+    top: 0;
+    width: 80%; }
+    .mobile-slideout#search-menu .global-search-container .search-icon {
+      display: none; }
+  .mobile-slideout#search-menu .global-search-container .ui-autocomplete.ui-widget-content li.ui-menu-item .search-result-container .search-result-text-content {
+    width: auto; }
+  .mobile-slideout#mobilenav-menu .mobilenav {
+    margin-left: 0.5em; }
+    .mobile-slideout#mobilenav-menu .mobilenav .ui-menu-item .nav-menu-item,
+    .mobile-slideout#mobilenav-menu .mobilenav .ui-menu-item .sub-nav .ui-menu {
+      color: #FFFFFF;
+      background: transparent; }
+    .mobile-slideout#mobilenav-menu .mobilenav .ui-menu-item .nav-menu-item.ui-state-hover,
+    .mobile-slideout#mobilenav-menu .mobilenav .ui-menu-item.active > .nav-menu-item {
+      color: #000000;
+      background: #FFFFFF;
+      margin-left: -0.5em;
+      text-indent: 0.5em; }
+    .mobile-slideout#mobilenav-menu .mobilenav .ui-menu-item .sub-nav {
+      display: block !important;
+      position: static !important;
+      margin: 0 0 0 -0.5em; }
+      .mobile-slideout#mobilenav-menu .mobilenav .ui-menu-item .sub-nav .nav-menu-item {
+        margin-left: 0;
+        text-indent: 1.5em;
+        font-size: 0.9em;
+        line-height: 2; }
+  .mobile-slideout.show-slideout {
+    display: block;
+    width: 85.5%;
+    opacity: 100;
+    transition: all 0.7s ease-in-out; }
+    .mobile-slideout.show-slideout#topnav-menu, .mobile-slideout.show-slideout#mobilenav-menu {
+      height: 100%; }
+    .mobile-slideout.show-slideout#search-menu {
+      width: 100%; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .one-pass-list-wrapper .one-pass-list-items .one-pass-edit-selectors {
+    padding-right: 0px; }
+  .one-pass-list-wrapper .one-pass-list-items .onepass-line {
+    margin: 0px; }
+    .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-body {
+      width: 35%; }
+    .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-suffix {
+      width: 20%; }
+      .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-suffix .date {
+        width: 30%; }
+      .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-suffix .progress-bar-wrapper {
+        display: none; }
+  .one-pass-list-wrapper .one-pass-links {
+    width: 300px;
+    float: right;
+    margin: 8px 0 0 0; }
+
+  .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .line-item-body {
+    width: 53%; }
+  .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .line-item-suffix {
+    width: 220px; } }
+@media only screen and (max-width: 767px) {
+  .one-pass-list-wrapper .one-pass-list-items .program-image {
+    display: none; }
+
+  .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .one-pass-edit-selectors {
+    padding: 1em 0px 1em 1.4em; }
+  .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .onepass-line {
+    margin: 0px; }
+    .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-body {
+      width: 60%; }
+    .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-suffix {
+      width: 12%; }
+      .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-suffix .progress-bar-wrapper, .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-suffix .date, .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-suffix .op-channel {
+        display: none; }
+      .has-episode-panel .one-pass-list-wrapper .one-pass-list-items .onepass-line .line-item-suffix .season-info {
+        width: 100%; } }
+:not(.info-panel-gallery).flickity-enabled .flickity-prev-next-button {
+  opacity: 0;
+  transition: 0.3s ease-in;
+  transition-property: opacity; }
+  :not(.info-panel-gallery).flickity-enabled .flickity-prev-next-button[disabled] {
+    display: none; }
+  :not(.info-panel-gallery).flickity-enabled .flickity-prev-next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+:not(.info-panel-gallery).flickity-enabled:hover .flickity-prev-next-button {
+  opacity: 1; }
+
+.person-page .person-detail-container {
+  position: relative;
+  width: 100%;
+  height: 683px;
+  max-height: 75vh;
+  overflow: hidden; }
+  .person-page .person-detail-container .person-detail-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    filter: blur(50px);
+    -webkit-filter: blur(50px); }
+    .person-page .person-detail-container .person-detail-background.person.default-image {
+      background-image: url("../img/fallback/bg_default_tv_560x419.png"); }
+  .person-page .person-detail-container .person-detail-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: top center;
+    background-size: auto 100%;
+    background-repeat: no-repeat; }
+    .person-page .person-detail-container .person-detail-photo.person.default-image {
+      background-image: url("../img/fallback/bg_default_person_186x248.png"); }
+  .person-page .person-detail-container .bottom-gradient {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 256px;
+    background-image: linear-gradient(to bottom, rgba(18, 18, 18, 0), #121212); }
+  .person-page .person-detail-container .person-detail-text {
+    position: absolute;
+    left: 24px;
+    bottom: 0px;
+    color: #ffffff; }
+    .person-page .person-detail-container .person-detail-text .person-name {
+      font-size: 36px;
+      margin-top: 8px;
+      margin-bottom: 8px; }
+    .person-page .person-detail-container .person-detail-text .person-birthdate,
+    .person-page .person-detail-container .person-detail-text .person-birthplace {
+      display: none;
+      font-size: 18px;
+      margin-bottom: 8px; }
+    .person-page .person-detail-container .person-detail-text .person-wishlist-text {
+      position: relative;
+      top: -2px;
+      left: 2px; }
+    .person-page .person-detail-container .person-detail-text .create-wishlist-button {
+      min-width: 105px; }
+.person-page .tv-credits-container,
+.person-page .movie-credits-container,
+.person-page .production-credits-container {
+  position: relative;
+  margin-top: 34px;
+  margin-left: 24px;
+  margin-right: 24px; }
+  .person-page .tv-credits-container h3,
+  .person-page .movie-credits-container h3,
+  .person-page .production-credits-container h3 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .person-page .tv-credits-container .programs-container.is-dragging,
+  .person-page .movie-credits-container .programs-container.is-dragging,
+  .person-page .production-credits-container .programs-container.is-dragging {
+    pointer-events: none; }
+
+/** The '.feed-content-detail-panel' is a construct of the linked-carousel widget, which creates 
+    a new carousel loaded with content-description-panels upon a click of a content tile in a feed-list carousel. **/
+/** Note, this is done as padding to preserve the full 100% width for the Gallery **/
+.feed-content-detail-panel {
+  background-color: #242424;
+  padding: 24px 8px 6px 8px;
+  height: 414px;
+  overflow: hidden;
+  width: 100%;
+  /* Container for the atmospheric image used as background for feed-panel */ }
+  .feed-content-detail-panel .atmospheric-image-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* atmospheric background should cover with maintaining aspect ratio */
+    background-position: center top;
+    position: absolute;
+    right: 8px;
+    top: 0;
+    height: 414px;
+    /* height & width adjusted proportionately to fit the actual height of the preview gallery */
+    width: 736px; }
+  .feed-content-detail-panel [data-panel-widget="sports-event-upcoming"].show-sport-filter label {
+    display: none; }
+  .feed-content-detail-panel [data-panel-widget="sports-event-upcoming"].show-sport-filter .upcoming-filters {
+    display: inline-block; }
+
+.feed-content-detail-panel.hide-atmo .atmospheric-image-container {
+  display: none; }
+
+/**
+   content-container flex layout with two panel children:
+     preview-image-panel - panel with the poster image, and play button/menu
+     content-description-panel - program info, and action buttons
+
+   both layout adjacent, natural sized and justifed left (default for flex)
+**/
+.content-container {
+  display: flex; }
+  .content-container > .preview-image-panel {
+    position: relative;
+    margin-right: 1em; }
+    .content-container > .preview-image-panel .video-source-switcher {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      z-index: 50; }
+    .content-container > .preview-image-panel .showing-info-status {
+      position: absolute;
+      bottom: 10px;
+      left: 0px;
+      background-image: linear-gradient(to bottom, rgba(36, 36, 36, 0), rgba(36, 36, 36, 0.48));
+      width: 100%;
+      padding: 3px 6px;
+      font-size: 18px; }
+    .content-container > .preview-image-panel .showing-info-status-icon,
+    .content-container > .preview-image-panel .showing-info-text,
+    .content-container > .preview-image-panel .channel-icon,
+    .content-container > .preview-image-panel .channel-number,
+    .content-container > .preview-image-panel .image-sd,
+    .content-container > .preview-image-panel .image-hd {
+      vertical-align: middle;
+      display: inline-block; }
+    .content-container > .preview-image-panel .channel-number,
+    .content-container > .preview-image-panel .image-sd,
+    .content-container > .preview-image-panel .image-hd {
+      margin-left: 5px; }
+    .content-container > .preview-image-panel .channel-icon {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-left: 5px;
+      width: 88px;
+      height: 25px; }
+    .content-container > .preview-image-panel .progress-bar.ui-progressbar {
+      border-width: 0px;
+      border-style: solid;
+      border-color: #000;
+      background: none;
+      height: 2px;
+      width: 100%;
+      text-align: left;
+      overflow: hidden;
+      position: relative;
+      top: -2px; }
+      .content-container > .preview-image-panel .progress-bar.ui-progressbar .ui-progressbar-value {
+        border: none;
+        height: 2px;
+        background: transparent;
+        margin: 0; }
+      .content-container > .preview-image-panel .progress-bar.ui-progressbar.completely-watched {
+        background: #38bdff; }
+      .content-container > .preview-image-panel .progress-bar.ui-progressbar.partially-watched {
+        background: #038803; }
+        .content-container > .preview-image-panel .progress-bar.ui-progressbar.partially-watched .ui-progressbar-value {
+          background-image: linear-gradient(to left, #80ff54, #80ff54 16px, #038803 17px, #038803); }
+  .content-container > .content-description-panel {
+    flex-grow: 0;
+    height: 369px;
+    max-width: 600px;
+    font-size: 18px; }
+
+/* img-container with .show-play-button class applied  */
+.content-container .program-image .img-container.show-play-button .image-play {
+  display: inline-block; }
+
+.content-description-panel {
+  /* nested selectors for content-description-panel to prevent changes from affecting selectors used elsewhere */ }
+  .content-description-panel .season-info {
+    margin: 0 3px 0 0; }
+  .content-description-panel h2.main-title {
+    margin-bottom: .2em;
+    display: inline-block; }
+  .content-description-panel .description-trailer {
+    margin: 8px 0;
+    display: block; }
+  .content-description-panel .duration-first-aired {
+    display: block; }
+  .content-description-panel .genre-list {
+    color: #bfbfbf; }
+  .content-description-panel .description-with-trailer {
+    padding-right: 20px;
+    margin: .5em 0;
+    font-size: 18px; }
+    .content-description-panel .description-with-trailer .description {
+      display: block;
+      max-height: 96px;
+      font-size: 18px;
+      overflow: hidden; }
+      .content-description-panel .description-with-trailer .description .description-panel-more-info {
+        white-space: nowrap;
+        color: #447FC3;
+        margin-left: 4px; }
+  .content-description-panel .is-cc-hd.hd-icon,
+  .content-description-panel .is-cc-hd.cc-icon,
+  .content-description-panel .is-cc-hd.cc-hd-icon {
+    display: inline-block;
+    width: 28px;
+    height: 18px;
+    text-align: center;
+    vertical-align: baseline;
+    margin: 0 5px 0 0; }
+  .content-description-panel .is-cc-hd.hd-icon:before {
+    content: "(HD)"; }
+  .content-description-panel .is-cc-hd.cc-icon:before {
+    content: "(CC)"; }
+  .content-description-panel .is-cc-hd.cc-hd-icon:before {
+    content: "(CC, HD)"; }
+  .content-description-panel .is-cc-hd.cc-hd-icon {
+    width: 64px; }
+  .content-description-panel .explore-links {
+    margin: .5em 0;
+    display: inline-block; }
+  .content-description-panel .notification-area {
+    display: block;
+    margin: .35em 0;
+    opacity: 0;
+    transition: all .5ms; }
+  .content-description-panel .notification-area.show-notification-message {
+    opacity: 1;
+    height: auto; }
+  .content-description-panel .notification-area .notification-message {
+    display: inline; }
+  .content-description-panel .branding-partners,
+  .content-description-panel .branding-partner-icon,
+  .content-description-panel .broadcast-status,
+  .content-description-panel .broadcast-status-icon {
+    display: inline-block;
+    vertical-align: middle; }
+  .content-description-panel .branding-partner-icon {
+    width: 38px;
+    height: 30px;
+    margin-right: 5px; }
+  .content-description-panel .broadcast-status {
+    margin-right: 5px; }
+  .content-description-panel .action-buttons-placement-wrapper {
+    margin-bottom: 9px;
+    min-height: 31px; }
+
+.movie .show-for-movie,
+.series .show-for-tv,
+.special .show-for-tv,
+.episode .show-for-tv,
+.non-episodic .show-for-tv,
+.sportsEvent .show-for-tv {
+  display: inline; }
+
+.movie .show-for-movie {
+  padding-right: .25em; }
+
+/** close X, positioned for the content info pane */
+.feed-content-detail-panel button.close {
+  position: absolute;
+  height: 24px;
+  right: 40px;
+  top: 24px;
+  width: 24px;
+  background: url(../img/svg/ic_close.svg) no-repeat center center; }
+  .feed-content-detail-panel button.close .close-x {
+    display: none; }
+
+.preview-panel-set > .feed-content-detail-panel {
+  position: relative; }
+
+.feed-content-detail-panel .close-x {
+  stroke: #FFFFFF;
+  stroke-linecap: round;
+  stroke-width: 5; }
+
+.entitlement-message-container {
+  display: block;
+  vertical-align: top;
+  font-size: 18px;
+  color: #ff8533; }
+
+/** program-image is the base class on the container element the programImage widget builds on */
+.program-image .img-container {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center; }
+  .program-image .img-container .image-overlay {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease; }
+  .program-image .img-container.is-fallback-image {
+    background-color: rgba(0, 0, 0, 0.3); }
+.program-image.tv .img-container.not-found-fallback {
+  background-image: url("../img/fallback/bg_default_tv_360x270.png");
+  background-size: cover; }
+.program-image.mov .img-container.not-found-fallback {
+  background-image: url("../img/fallback/bg_default_mov_180x270.png");
+  background-size: cover; }
+.program-image.team .img-container.not-found-fallback {
+  background-image: url("../img/fallback/bg_default_tv_360x270.png");
+  background-size: cover; }
+.program-image.wishlist .img-container {
+  background-image: url("../img/fallback/bg_default_wishlist.png");
+  background-size: cover; }
+.program-image.person .img-container.default-image {
+  background-image: url("../img/fallback/bg_default_person_150x200.png"); }
+.program-image.suggestion .img-container {
+  background-image: url("../img/fallback/bg_default_suggestion.png");
+  background-size: cover; }
+
+/** TODO the font size should come from a class passed to the programImage */
+/** if the image is a fallback, this class is added (is-fallback-image) */
+.program-image .img-container.is-fallback-image .image-overlay {
+  word-wrap: break-word; }
+
+/** TODO if we use this, add it to the structure above, otherwise just delete it */
+.program-image .img-container.load-pending {
+  background-color: transparent;
+  /* WIP - will animate this to fade the image in */
+  transform: scale(1); }
+
+.program-image .img-container {
+  opacity: 1; }
+  .program-image .img-container.loaded-image .image-overlay {
+    opacity: 0; }
+
+/** sizes for the preview-image, it scales to the size of the img-container */
+.program-image {
+  /** Formally know as 'poster-set-D', this size images is a medium sized poster used in dialogs, popups, and flyouts */ }
+  .program-image.preview-image.tv .img-container {
+    width: 360px;
+    height: 270px; }
+  .program-image.preview-image.mov .img-container {
+    width: 360px;
+    height: 270px; }
+  .program-image.preview-image.team .img-container {
+    width: 180px;
+    height: 180px; }
+  .program-image.dialog-image, .program-image.flyout-image {
+    display: inline-block; }
+    .program-image.dialog-image.tv .img-container, .program-image.flyout-image.tv .img-container {
+      width: 200px;
+      height: 150px; }
+    .program-image.dialog-image.team .img-container, .program-image.flyout-image.team .img-container {
+      width: 150px;
+      height: 150px; }
+    .program-image.dialog-image.mov .img-container, .program-image.flyout-image.mov .img-container {
+      width: 100px;
+      height: 150px; }
+    .program-image.dialog-image.wishlist .img-container, .program-image.flyout-image.wishlist .img-container {
+      width: 200px;
+      height: 150px; }
+  .program-image.description-image.tv .img-container {
+    width: 280px;
+    height: 180px; }
+  .program-image.description-image.team .img-container {
+    width: 180px;
+    height: 180px; }
+  .program-image.description-image.mov .img-container {
+    width: 140px;
+    height: 180px; }
+  .program-image.description-image.wishlist .img-container {
+    width: 280px;
+    height: 180px; }
+  .program-image.line-item-image {
+    display: inline-block;
+    width: 100px; }
+    .program-image.line-item-image .img-container {
+      font-size: 0.8em; }
+    .program-image.line-item-image.tv .img-container {
+      width: 100px;
+      height: 75px; }
+    .program-image.line-item-image.mov .img-container {
+      margin: 0 auto;
+      width: 50px;
+      height: 75px; }
+    .program-image.line-item-image.team .img-container {
+      width: 100px;
+      height: 75px; }
+    .program-image.line-item-image.wishlist .img-container {
+      width: 100px;
+      height: 75px; }
+    .program-image.line-item-image.suggestion .img-container {
+      width: 100px;
+      height: 75px; }
+  .program-image.search-result-image {
+    min-height: 53px;
+    width: 70px; }
+    .program-image.search-result-image .img-container {
+      display: inline-block;
+      margin: 0 auto; }
+    .program-image.search-result-image.channel .img-container {
+      height: 53px;
+      width: 70px; }
+    .program-image.search-result-image.tv .img-container {
+      height: 53px;
+      width: 70px; }
+    .program-image.search-result-image.mov .img-container {
+      height: 53px;
+      width: 70px; }
+    .program-image.search-result-image.team .img-container {
+      height: 53px;
+      width: 70px; }
+    .program-image.search-result-image.person .img-container {
+      height: 53px;
+      width: 70px; }
+      .program-image.search-result-image.person .img-container.default-image {
+        background-image: url("../img/fallback/bg_default_person_40x53.png"); }
+  .upcoming-item .program-image.mov .img-container {
+    height: 200px;
+    width: 133px;
+    background-position: left center; }
+  .upcoming-item .program-image.episode .img-container, .upcoming-item .program-image.tv .img-container, .upcoming-item .program-image.sportsEvent .img-container {
+    height: 198px;
+    width: 264px;
+    background-position: left center; }
+  .program-item .program-image.mov .img-container {
+    height: 198px;
+    width: 132px;
+    background-position: left center; }
+  .program-item .program-image.tv .img-container {
+    height: 198px;
+    width: 264px;
+    background-position: left center; }
+  .all-episodes-item .program-image.tv .img-container {
+    height: 198px;
+    width: 264px;
+    background-position: left center; }
+
+.recorded-program-item {
+  width: 216px; }
+  .recorded-program-item .program-image.tv .img-container {
+    height: 162px;
+    width: 216px;
+    background-position: left center; }
+
+.program-image.faded-preview-image .img-container {
+  /* inset offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: inset 2px 2px 30px 30px #242424; }
+
+.dialog-body .description-content .min-height-wrapper {
+  min-height: calc( 150px / 2.5 ); }
+
+.guide .description-content .min-height-wrapper {
+  min-height: calc( 180px / 2.5 ); }
+
+.use16x9-images .program-image.preview-image.tv .img-container, .use16x9-images .program-image.preview-image.mov .img-container {
+  height: 369px;
+  width: 656px; }
+  .use16x9-images .program-image.preview-image.tv .img-container.not-found-fallback, .use16x9-images .program-image.preview-image.mov .img-container.not-found-fallback {
+    background-position: center;
+    background-color: transparent; }
+
+/* sizes for legacy non-hydra containers */
+.poster-set-D.tv .img-container, .poster-set-D.wishlist .img-container {
+  width: 200px;
+  height: 150px;
+  background-size: contain; }
+.poster-set-D.mov .img-container {
+  width: 100px;
+  height: 150px;
+  background-size: contain; }
+
+.poster-set-D.wishlist .img-container {
+  background-image: url("../img/fallback/bg_default_wishlist.png");
+  background-position: center center; }
+
+.logo-images .img-container > .img-container {
+  background-size: auto; }
+
+.dim-primary-image .img-container {
+  opacity: 0.6; }
+
+.titles-bottom .not-found-fallback .image-overlay,
+.detail-flyout .is-fallback-image .image-overlay,
+.description-content .is-fallback-image .image-overlay,
+.content-detail-panel .mov .fallback-text-overlay {
+  display: none; }
+
+.setupselect .setup-select-header-container,
+.setupselect .setup-select-footer-container {
+  border: 1px Solid #000000;
+  background-color: #1d1f24; }
+.setupselect .setup-select-header-container {
+  margin-bottom: 10px; }
+.setupselect .image-mso-branding {
+  background-size: contain;
+  background-position: 0px;
+  display: block;
+  width: 100px;
+  height: 20px;
+  margin: 10px auto; }
+.setupselect .poster-container.poster-set-D ul {
+  margin-bottom: 65px; }
+.setupselect footer {
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: 0px; }
+  .setupselect footer .footer {
+    display: block;
+    text-align: center;
+    width: 100%; }
+    .setupselect footer .footer a.default-button {
+      margin: 5px; }
+  .setupselect footer .sub-footer {
+    padding-bottom: 10px; }
+.setupselect .bulk-onepass-header h2 {
+  text-align: center; }
+.setupselect .global-dvr-selector {
+  right: -100%; }
+
+.setupselect .genre-links,
+.quickselect .genre-links {
+  display: none;
+  margin-top: 8px; }
+  .setupselect .genre-links.show-genre-links,
+  .quickselect .genre-links.show-genre-links {
+    display: inline-block; }
+
+.quickselect .one-pass-links,
+.setupselect .one-pass-links {
+  display: none; }
+  .quickselect .one-pass-links.show-sort-links,
+  .setupselect .one-pass-links.show-sort-links {
+    display: inline-block; }
+
+/*
+*Copyright 2015 TiVo Inc. All Rights Reserved
+*/
+/**  This file is for Share Icons  **/
+.share-container {
+  display: inline-block;
+  position: relative;
+  margin-left: 5px; }
+  .share-container .image-share {
+    cursor: pointer; }
+  .share-container .triangle-icon {
+    position: absolute;
+    border-left-width: 6px;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-right-width: 6px;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-bottom-width: 6px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+    display: inline-block; }
+  .share-container .share-this-show-title {
+    position: absolute;
+    z-index: 101;
+    width: 150px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: normal; }
+  .share-container .share-icons-overlay {
+    height: 70px;
+    width: 175px;
+    background-color: #FFFFFF;
+    position: absolute;
+    padding: 0 5px;
+    border-radius: 8px;
+    margin: 5px;
+    left: -15px;
+    z-index: 100;
+    font-size: 13px; }
+    .share-container .share-icons-overlay .jssocials-shares {
+      position: relative;
+      top: 20px; }
+
+/* basic style for the container element */
+.signal-strength {
+  height: 10px;
+  width: 62px; }
+
+/* no signal shows 5 grey dots */
+.signal-1,
+.signal-2,
+.signal-3,
+.signal-4,
+.signal-5 {
+  fill: #323940;
+  stroke-width: 0; }
+
+/* weakest signal shows 1 red dot and 4 grey  */
+.signal-strength.weakest .signal-1 {
+  fill: #cc3300; }
+
+/* weak signal shows 2 yellow dots and 3 grey */
+.signal-strength.weak .signal-1,
+.signal-strength.weak .signal-2 {
+  fill: #ffcc00; }
+
+/* medium signal shows 3 yellow dots and 2 grey */
+.signal-strength.medium .signal-1,
+.signal-strength.medium .signal-2,
+.signal-strength.medium .signal-3 {
+  fill: #ffcc00; }
+
+/* strong signal shows 4 green dots and 1 grey */
+.signal-strength.strong .signal-1,
+.signal-strength.strong .signal-2,
+.signal-strength.strong .signal-3,
+.signal-strength.strong .signal-4 {
+  fill: #33cc00; }
+
+/* strongest signal shows 5 green dots */
+.signal-strength.strongest .signal-1,
+.signal-strength.strongest .signal-2,
+.signal-strength.strongest .signal-3,
+.signal-strength.strongest .signal-4,
+.signal-strength.strongest .signal-5 {
+  fill: #33cc00; }
+
+.team-page.content-page .team-detail-container {
+  position: relative;
+  width: 100%;
+  height: 683px;
+  max-height: 75vh;
+  overflow: hidden; }
+.team-page.content-page .team-detail-photo {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  height: 80%;
+  width: 80%; }
+  .team-page.content-page .team-detail-photo .img-container {
+    margin-top: 20px;
+    width: 480px;
+    height: 480px;
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat; }
+.team-page.content-page .team-detail-text {
+  position: absolute;
+  left: 24px;
+  bottom: 0px;
+  color: #ffffff; }
+  .team-page.content-page .team-detail-text .team-name {
+    font-size: 36px;
+    margin-top: 8px;
+    margin-bottom: 8px; }
+.team-page.content-page .content-image-container {
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: -99;
+  width: 80%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top; }
+.team-page.content-page .content-upcoming-container .image-nav-left,
+.team-page.content-page .content-upcoming-container .image-nav-right {
+  top: 145px; }
+
+/**  This file is for Transfer Recordings  **/
+.transfer.medium-screen-size .global-header:after {
+  transition: none;
+  opacity: 1; }
+.transfer.medium-screen-size .hide-for-guest {
+  padding: 0; }
+.transfer.medium-screen-size .default-message.hide-for-single-dvr {
+  max-width: 81%;
+  margin: 10px auto; }
+
+.dvr-list {
+  width: 180px; }
+
+.transfer-recordings-nav-bar {
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.24), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+  height: 56px; }
+
+.transfer-button-container {
+  height: 80px;
+  display: flex;
+  margin-top: 10px; }
+  .transfer-button-container .body-selectors {
+    display: flex; }
+    .transfer-button-container .body-selectors .ui-selectmenu-button {
+      display: flex; }
+  .transfer-button-container label {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600; }
+  .transfer-button-container .primary-selector span:first-of-type {
+    display: flex;
+    flex-direction: column; }
+  .transfer-button-container .primary-selector .disk-meter {
+    right: 25%; }
+  .transfer-button-container .secondary-selector {
+    margin-left: 30px; }
+    .transfer-button-container .secondary-selector .disk-meter {
+      right: 12%; }
+  .transfer-button-container .body-selector {
+    display: flex;
+    min-width: 300px; }
+  .transfer-button-container .disk-meter {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: #bfbfbf;
+    font-size: 18px; }
+
+.transfer-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding-bottom: 10px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #323940; }
+
+.select-all-checkbox .image-checkbox input {
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  cursor: pointer; }
+.select-all-checkbox .bold-text {
+  margin-left: 26px;
+  color: #ffffff;
+  font-size: 16px; }
+  .select-all-checkbox .bold-text .suggestions-label {
+    margin-left: 15px; }
+  .select-all-checkbox .bold-text .image-suggestion {
+    position: relative;
+    top: 10px; }
+
+.transfer-sort-links {
+  margin-right: 11%;
+  margin-top: 8px; }
+  .transfer-sort-links .inline-tabs {
+    height: 32px;
+    border-radius: 6px;
+    background-color: #3d3d3d;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600; }
+    .transfer-sort-links .inline-tabs .ui-state-default {
+      border-left-color: #999999; }
+      .transfer-sort-links .inline-tabs .ui-state-default.ui-state-active a {
+        color: #ffffff; }
+      .transfer-sort-links .inline-tabs .ui-state-default a {
+        color: #999999;
+        padding: 0 6px 0; }
+
+.transfer-list-view {
+  max-width: 81%;
+  margin: 0 auto; }
+  .transfer-list-view .default-message {
+    position: relative;
+    top: -5px; }
+  .transfer-list-view .progress-bar-wrapper {
+    margin-left: 0;
+    overflow: hidden;
+    margin-right: 10px;
+    min-width: 85px; }
+    .transfer-list-view .progress-bar-wrapper .js-progress-bar {
+      width: 100px;
+      height: 5px;
+      border: none; }
+      .transfer-list-view .progress-bar-wrapper .js-progress-bar .ui-progressbar-value {
+        background-color: #00a6e3;
+        border-radius: 4px; }
+
+.transfer-edit-button button {
+  border-radius: 6px;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.12);
+  background-color: #1892c2;
+  font-weight: 600;
+  align-self: center; }
+  .transfer-edit-button button:hover {
+    background: #1278a0; }
+
+.transfer-list-container {
+  height: auto;
+  position: relative;
+  background: #0f0f0f; }
+  .transfer-list-container .js-transfer-list.loading-spinner {
+    height: 300px; }
+  .transfer-list-container.list-empty .no-recordings {
+    display: block;
+    padding: 30px 15px;
+    top: 10px;
+    width: auto; }
+  .transfer-list-container.list-empty .loading-spinner {
+    height: 0; }
+  .transfer-list-container.show-disconnected-error .disconnected-error {
+    display: block;
+    padding: 30px 15px;
+    top: 10px;
+    width: auto; }
+  .transfer-list-container.show-disconnected-error .loading-spinner {
+    height: 0; }
+  .transfer-list-container .onepass-line {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    padding-left: 0; }
+    .transfer-list-container .onepass-line:last-child {
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #323940; }
+    .transfer-list-container .onepass-line .line-item-prefix {
+      width: 55px;
+      display: flex;
+      align-items: center; }
+    .transfer-list-container .onepass-line .line-item-body {
+      margin: 0 1em;
+      display: flex;
+      width: 60%;
+      align-items: center;
+      color: #ffffff;
+      font-size: 20px; }
+      .transfer-list-container .onepass-line .line-item-body .item-info {
+        display: flex;
+        white-space: nowrap;
+        overflow: hidden;
+        align-items: center; }
+        .transfer-list-container .onepass-line .line-item-body .item-info .episode-title {
+          margin-left: 5px;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+      .transfer-list-container .onepass-line .line-item-body .status-info {
+        display: flex;
+        align-items: center;
+        min-width: 155px;
+        margin-left: 5px; }
+        .transfer-list-container .onepass-line .line-item-body .status-info .onepass-status {
+          position: absolute;
+          top: 24px;
+          left: 48px; }
+          .transfer-list-container .onepass-line .line-item-body .status-info .onepass-status.image-suggestion {
+            top: 12px;
+            left: 38px; }
+        .transfer-list-container .onepass-line .line-item-body .status-info .status-icons {
+          margin-left: 5px; }
+    .transfer-list-container .onepass-line .line-item-suffix {
+      width: 28%;
+      display: flex;
+      margin-left: auto;
+      align-items: center; }
+      .transfer-list-container .onepass-line .line-item-suffix .op-channel {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .transfer-list-container .onepass-line .line-item-suffix .date {
+        margin-right: 25px;
+        width: 35%;
+        text-align: right;
+        color: #ffffff;
+        font-size: 20px; }
+
+.show-single-dvr .hide-for-single-dvr,
+.show-multiple-dvrs .hide-for-multiple-dvrs {
+  display: none; }
+
+.hide-disk-meter .disk-meter {
+  visibility: hidden; }
+
+.ui-selectable-helper {
+  border: 1px dotted #00a6e2 !important; }
+
+@media only screen and (max-width: 767px) {
+  .hide-for-mobileos {
+    display: none; } }
+@media only screen and (min-width: 768px) {
+  .hide-for-desktop {
+    display: none; } }
+@media only screen and (max-width: 1023px) {
+  .hide-for-mobileos {
+    display: none; }
+
+  .hide-for-desktop {
+    display: block; }
+
+  .globalnav .ui-menu > .ui-menu-item:not(.active) {
+    display: none; }
+
+  .globalnav .carousel {
+    max-width: 65%; } }
+@media only screen and (min-width: 1024px) {
+  .hide-for-desktop {
+    display: none; }
+
+  .globalnav .carousel {
+    max-width: 55%; } }
+@media only screen and (max-width: 767px) {
+  .globalnav .main-nav-item {
+    display: none; }
+    .globalnav .main-nav-item.active {
+      display: inline-block; }
+
+  .global-search-container.show-search-area {
+    position: fixed;
+    right: 0;
+    max-width: 320px; } }
+.medium-screen-size .global-header {
+  height: 90px;
+  margin-top: 0;
+  background-image: linear-gradient(to top, rgba(15, 15, 15, 0), #0f0f0f); }
+  .medium-screen-size .global-header:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #0f0f0f, rgba(15, 15, 15, 0.8));
+    opacity: 0;
+    transition: all 1000ms linear; }
+  .medium-screen-size .global-header.scroll-fix:after {
+    opacity: 1;
+    background-image: linear-gradient(to bottom, #0f0f0f, #0f0f0f); }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    min-width: 0; }
+
+  .medium-screen-size .js-content-page .video-source-switcher {
+    right: 200px; }
+
+  .margin-both {
+    padding: 0 20px; }
+
+  #topnav {
+    margin: 0 10px 0 0; }
+
+  .global-search-container.show-search-area {
+    width: calc(100% - 50px);
+    max-width: 540px; }
+
+  .global-search-container .ui-autocomplete.ui-widget-content {
+    max-width: 540px; }
+
+  .grid-flex-full {
+    min-width: auto;
+    width: 100%; }
+
+  .grid-fixed-left {
+    float: none;
+    width: 100%; }
+
+  .tve-start .grid-flex-right {
+    margin-left: 0; }
+
+  .carousel-container .pagination {
+    height: auto; }
+
+  .content-description-panel {
+    margin-right: 0; }
+
+  .content-description-panel h2.main-title {
+    display: block; }
+
+  /* use a smaller poster width for these screens */
+  .use16x9-images .mov.preview-image .img-container,
+  .use16x9-images .tv.preview-image .img-container {
+    background-position: center top;
+    width: 320px !important; }
+
+  .guide #guide-controls {
+    min-width: 0px; }
+
+  /* adjust widths for tablets so control buttons do not wrap severely */
+  .guide #guide-controls .subnav .header-cell-left {
+    width: 25%; }
+
+  .guide #guide-controls .subnav .header-cell-center {
+    width: 50%; }
+
+  .guide #guide-controls .subnav .header-cell-right {
+    float: right;
+    width: 25%; }
+
+  .bulk-onepass-header h2 {
+    margin: .25em 0;
+    text-align: center; }
+
+  .bulk-onepass-header .bulk-onepass-description {
+    margin: 0;
+    text-align: justify; }
+
+  .tiles-list.poster-container {
+    margin: 0.5em 2%; }
+
+  .tiles-list.poster-container ul.items > li {
+    margin: 0 6px 15px 0; } }
+@media only screen and (max-width: 767px) {
+  body {
+    min-width: 0px; }
+
+  [class*="column"] + [class*="column"]:last-child {
+    float: none; }
+
+  .row .one,
+  .row .two,
+  .row .three,
+  .row .four,
+  .row .five,
+  .row .six,
+  .row .seven,
+  .row .eight,
+  .row .nine,
+  .row .ten,
+  .row .eleven,
+  .row .twelve {
+    width: 100%;
+    float: none; }
+
+  .margin-both {
+    padding: 0 5px 0 5px; }
+
+  .margin-left {
+    padding-left: 5px; }
+
+  .margin-right {
+    padding-right: 5px; }
+
+  .grid-flex-full {
+    min-width: auto;
+    width: 100%; }
+
+  .grid-fixed-left {
+    float: none;
+    width: 100%; }
+
+  .tve-start .grid-flex-right {
+    margin-left: 0; }
+
+  .carousel-container .pagination {
+    height: auto; }
+
+  .guide #guide-controls {
+    min-width: 0px; }
+
+  .guide #guide-controls .subnav .header-cell-left,
+  .guide #guide-controls .subnav .header-cell-center,
+  .guide #guide-controls .subnav .header-cell-right {
+    float: none;
+    width: 100% !important; }
+
+  .guide #guide-controls .subnav .subnav-container.date-time-filter,
+  .guide #guide-controls .subnav .subnav-container.zip-search .search,
+  .guide #guide-controls .subnav .subnav-container.channel-search .search,
+  .guide .channel-selector,
+  .guide .channel-search {
+    float: none;
+    width: 100%; }
+    .guide #guide-controls .subnav .subnav-container.date-time-filter .datetime-button,
+    .guide #guide-controls .subnav .subnav-container.zip-search .search .datetime-button,
+    .guide #guide-controls .subnav .subnav-container.channel-search .search .datetime-button,
+    .guide .channel-selector .datetime-button,
+    .guide .channel-search .datetime-button {
+      width: 100%; }
+    .guide #guide-controls .subnav .subnav-container.date-time-filter .ui-autocomplete-input,
+    .guide #guide-controls .subnav .subnav-container.zip-search .search .ui-autocomplete-input,
+    .guide #guide-controls .subnav .subnav-container.channel-search .search .ui-autocomplete-input,
+    .guide .channel-selector .ui-autocomplete-input,
+    .guide .channel-search .ui-autocomplete-input {
+      width: 100%; }
+
+  .guide .channel-selector {
+    margin-right: 0; }
+
+  .guide .channel-selector .ui-selectmenu-button {
+    max-width: 100%; }
+
+  .time-jump-item.default-button {
+    min-width: 50px; }
+
+  .guide .channel + .description .description-content .description-data {
+    display: block;
+    width: auto;
+    top: 5px; }
+
+  .hr-line {
+    margin-left: -5px;
+    width: calc(100% + 5px); }
+
+  .bulk-onepass-header h2 {
+    margin: .25em 0;
+    text-align: center; }
+
+  .bulk-onepass-header .bulk-onepass-description {
+    margin: 0;
+    text-align: justify; }
+
+  .tiles-list.poster-container {
+    margin: 0.5em 2%; }
+
+  .tiles-list.poster-container ul.items > li {
+    margin: 0 6px 15px 0; }
+
+  .episode-detail-wrapper .content-description {
+    display: block;
+    margin: 0;
+    width: auto; }
+
+  .content-detail-panel .poster-container {
+    display: block;
+    float: none;
+    margin: .5em auto 1em; }
+
+  .content-supplemental-panel .suggestions-wrapper {
+    float: left;
+    width: 99%; }
+  .content-supplemental-panel .cast-wrapper {
+    float: left;
+    margin-right: 0;
+    width: 99%; }
+
+  .js-content-page .content-description-panel .video-source-switcher {
+    top: 15%;
+    right: 48%; } }
+@media only screen and (max-width: 480px) {
+  .tiles-list.poster-container,
+  .bulk-onepass-header,
+  .one-pass-links {
+    width: 226px;
+    margin: 0 auto;
+    float: none; }
+
+  .tiles-list.poster-container {
+    clear: both; }
+
+  .one-pass-links {
+    margin: 8px auto;
+    text-align: right; }
+    .one-pass-links .inline-tabs-label {
+      float: none;
+      position: relative;
+      top: -5px; }
+
+  .setupselect .genre-links,
+  .quickselect .genre-links {
+    display: none;
+    margin: 8px auto;
+    width: 226px; }
+    .setupselect .genre-links.show-genre-links,
+    .quickselect .genre-links.show-genre-links {
+      display: block; }
+
+  .row.header {
+    height: 40px; }
+
+  .mobile-header .image-mso-branding {
+    background-position: center center;
+    position: absolute;
+    left: calc(46% - 50%);
+    transform: scale(0.6, 0.6);
+    width: 100%;
+    height: 40px;
+    margin: 0; }
+
+  .sub-footer ul li.break-text {
+    display: block; }
+
+  .info-panel-gallery .preview-image .img-container,
+  .preview-panel-set .preview-image .img-container,
+  .info-panel-gallery .atmospheric-image-container,
+  .preview-panel-set .atmospheric-image-container {
+    display: none; }
+
+  .info-panel-gallery .preview-image,
+  .preview-panel-set .preview-image {
+    margin: 0; }
+
+  .feed-content-detail-panel {
+    height: 420px;
+    padding: 15px 40px;
+    width: 100%; }
+    .feed-content-detail-panel .content-description-panel {
+      height: auto;
+      margin-right: 0; }
+      .feed-content-detail-panel .content-description-panel .action-buttons {
+        display: block; }
+        .feed-content-detail-panel .content-description-panel .action-buttons li {
+          display: block; }
+        .feed-content-detail-panel .content-description-panel .action-buttons .default-button {
+          margin-bottom: 1em;
+          width: 100%; }
+      .feed-content-detail-panel .content-description-panel h2.main-title {
+        font-size: 1.5em; }
+      .feed-content-detail-panel .content-description-panel .image-share {
+        transform: scale(0.75); }
+    .feed-content-detail-panel button.close {
+      height: 20px;
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      width: 30px; }
+
+  .info-panel-gallery .flickity-prev-next-button.next {
+    right: -10px; }
+
+  .ui-dialog.default-dialog {
+    width: 98%; }
+    .ui-dialog.default-dialog .extra-wide-buttons .default-button {
+      min-width: 0px !important;
+      width: 100% !important; }
+
+  .default-dialog .poster-container {
+    display: none; }
+
+  .default-dialog .series .show-title-area,
+  .default-dialog .special .show-title-area {
+    width: 100%;
+    padding: 0 .5em; }
+
+  .has-one-pass-nav .one-pass-nav-wrapper {
+    display: block;
+    float: none;
+    height: auto;
+    width: 100%; }
+
+  .has-one-pass-nav .one-pass-list-wrapper {
+    width: 100%; }
+    .has-one-pass-nav .one-pass-list-wrapper .line-item-body {
+      width: inherit;
+      margin: 0;
+      min-height: 10px; }
+    .has-one-pass-nav .one-pass-list-wrapper .line-item-suffix {
+      float: none;
+      display: block; }
+
+  .one-pass-flyout-right {
+    width: 100%; }
+
+  .content-detail-flyout-container {
+    min-width: 310px;
+    left: 0px !important; }
+    .content-detail-flyout-container .detail-flyout .poster-container {
+      display: block; }
+    .content-detail-flyout-container .series .detail-flyout .show-title-area,
+    .content-detail-flyout-container .special .detail-flyout .show-title-area {
+      width: auto; }
+    .content-detail-flyout-container .qtip-tip {
+      display: none !important; }
+
+  .global-search-container .ui-autocomplete.ui-widget-content {
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+    max-height: 100%; } }
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .info-panel-gallery .preview-image .img-container,
+  .preview-panel-set .preview-image .img-container {
+    display: none; }
+
+  .info-panel-gallery .preview-image,
+  .preview-panel-set .preview-image {
+    margin: 0; }
+
+  .feed-content-detail-panel {
+    height: 330px;
+    padding: 15px 40px;
+    width: 100%; }
+    .feed-content-detail-panel .content-description-panel {
+      height: auto;
+      margin-right: 0; }
+      .feed-content-detail-panel .content-description-panel .min-height-wrapper {
+        min-height: 0; }
+      .feed-content-detail-panel .content-description-panel h2.main-title {
+        display: block; }
+    .feed-content-detail-panel button.close {
+      height: 20px;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      width: 30px; }
+
+  .ui-dialog.default-dialog {
+    width: 98%;
+    max-width: 565px; } }
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+  .tiles-list.poster-container,
+  .bulk-onepass-header,
+  .one-pass-links {
+    width: 470px;
+    margin: 0 auto;
+    float: none; }
+
+  .tiles-list.poster-container {
+    clear: both; }
+
+  .one-pass-links {
+    margin: 8px auto;
+    text-align: right; }
+    .one-pass-links .inline-tabs-label {
+      float: none;
+      position: relative;
+      top: -5px; }
+
+  .setupselect .genre-links,
+  .quickselect .genre-links {
+    display: none;
+    margin: 8px auto;
+    width: 470px; }
+    .setupselect .genre-links.show-genre-links,
+    .quickselect .genre-links.show-genre-links {
+      display: block; }
+
+  .mobile-header .image-mso-branding {
+    background-position: center center;
+    position: absolute;
+    left: calc(46% - 250px);
+    transform: scale(0.6, 0.6);
+    width: 100%;
+    height: 40px;
+    margin: 0; } }
+@media only screen and (min-width: 720px) and (max-width: 980px) {
+  .tiles-list.poster-container,
+  .bulk-onepass-header,
+  .one-pass-links {
+    width: 706px;
+    margin: 0 auto;
+    float: none; }
+
+  .tiles-list.poster-container {
+    clear: both; }
+
+  .one-pass-links {
+    margin: 8px auto;
+    text-align: right; }
+    .one-pass-links .inline-tabs-label {
+      float: none;
+      position: relative;
+      top: -5px; }
+
+  .setupselect .genre-links,
+  .quickselect .genre-links {
+    display: none;
+    margin: 8px auto;
+    width: 706px; }
+    .setupselect .genre-links.show-genre-links,
+    .quickselect .genre-links.show-genre-links {
+      display: block; } }
+
+/*# sourceMappingURL=app.css.map */
+
